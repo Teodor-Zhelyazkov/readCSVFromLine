@@ -13,7 +13,7 @@ private function readCSVFromLine( $csvFile, $fromLine = 0, $linesToShow = 0 )
     $csvArray    = [];
     $file_handle = fopen($csvFile, 'r');
     $line        = 0;
-    $fileLines   = $this->fileLines;
+    $fileLines   = 10;
     $show        = 0;
 
     if( $linesToShow != 0 || $linesToShow != "0")
